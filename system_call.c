@@ -12,10 +12,11 @@
 #include <stdio.h>
 
 /**
- * 
- *
- *
- *
+ * Affiche "processus 1" dans le terminal
+ * système arrête pendant 10 secs
+ * Affiche "processus 3" dans le terminal
+ * système arrête pendant 5 secs
+ * Affiche "processus 5" dans le terminal
  * @return     0 
  */
 int main() {
