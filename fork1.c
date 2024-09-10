@@ -10,7 +10,7 @@
 //#define _XOPEN_SOURCE 800 
 #define _GNU_SOURCE
 
-//#include <stdlib.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
 
@@ -18,7 +18,14 @@ int main()
 {
 pid_t pid;
 pid = fork();
-printf("Je suis le processus: %d\n", pid);
+if(pid == 0)
+{
+    printf("Je suis le processus: %d\n", pid); //Child
+}
+else
+{
+    printf("Je suis le processus: %d\n", pid);// Parent
+}
 
 return 0;
 }
